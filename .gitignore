@@ -1,0 +1,11 @@
+.env
+.tools/
+**/bin/
+**/obj/
+artifacts/
+/Buddy.exe
+.vs/
+*.user
+assets/source/*
+!assets/source/.gitkeep
+/PskCompanion.exe

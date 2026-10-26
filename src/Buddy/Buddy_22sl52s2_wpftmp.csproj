@@ -1,0 +1,262 @@
+<Project>
+  <PropertyGroup>
+    <AssemblyName>Buddy</AssemblyName>
+    <IntermediateOutputPath>obj\Debug\</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>D:\destop-companion-psk\src\Buddy\obj\</MSBuildProjectExtensionsPath>
+    <_TargetAssemblyProjectName>Buddy</_TargetAssemblyProjectName>
+  </PropertyGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon Condition="Exists('Assets/app.ico')">Assets/app.ico</ApplicationIcon>
+    <AssemblyName>Buddy</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="H.NotifyIcon.Wpf" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+    <Content Include="Assets\**\*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Never" />
+    <EmbeddedResource Include="Assets\**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\Accessibility.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\communitytoolkit.mvvm\8.4.0\lib\net8.0-windows10.0.17763\CommunityToolkit.Mvvm.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\h.generatedicons.system.drawing\2.3.0\lib\net8.0\H.GeneratedIcons.System.Drawing.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\h.notifyicon\2.3.0\lib\net8.0\H.NotifyIcon.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\h.notifyicon.wpf\2.3.0\lib\net8.0-windows7.0\H.NotifyIcon.Wpf.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\microsoft.toolkit.uwp.notifications\7.1.3\lib\net5.0-windows10.0.17763\Microsoft.Toolkit.Uwp.Notifications.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\Microsoft.VisualBasic.Core.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\Microsoft.VisualBasic.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\Microsoft.Win32.Primitives.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\Microsoft.Win32.Registry.AccessControl.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\Microsoft.Win32.Registry.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\microsoft.win32.systemevents\9.0.1\lib\net8.0\Microsoft.Win32.SystemEvents.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.17763.56\lib\net8.0\Microsoft.Windows.SDK.NET.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\mscorlib.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\netstandard.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationCore.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationFramework.Aero.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationFramework.Aero2.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationFramework.AeroLite.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationFramework.Classic.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationFramework.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationFramework.Luna.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationFramework.Royale.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\PresentationUI.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\ReachFramework.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.AppContext.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Buffers.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.CodeDom.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Collections.Concurrent.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Collections.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Collections.Immutable.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Collections.NonGeneric.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Collections.Specialized.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ComponentModel.Annotations.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ComponentModel.DataAnnotations.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ComponentModel.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ComponentModel.EventBasedAsync.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ComponentModel.Primitives.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ComponentModel.TypeConverter.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Configuration.ConfigurationManager.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Configuration.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Console.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Core.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Data.Common.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Data.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.Contracts.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.Debug.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.DiagnosticSource.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.EventLog.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.FileVersionInfo.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.PerformanceCounter.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.Process.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.StackTrace.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.TextWriterTraceListener.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.Tools.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.TraceSource.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Diagnostics.Tracing.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.DirectoryServices.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\system.drawing.common\9.0.1\lib\net8.0\System.Drawing.Common.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Drawing.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Drawing.Primitives.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Dynamic.Runtime.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Formats.Asn1.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Formats.Tar.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Globalization.Calendars.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Globalization.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Globalization.Extensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.Compression.Brotli.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.Compression.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.Compression.FileSystem.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.Compression.ZipFile.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.FileSystem.AccessControl.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.FileSystem.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.FileSystem.DriveInfo.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.FileSystem.Primitives.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.FileSystem.Watcher.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.IsolatedStorage.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.MemoryMappedFiles.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.IO.Packaging.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.Pipes.AccessControl.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.Pipes.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.IO.UnmanagedMemoryStream.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Linq.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Linq.Expressions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Linq.Parallel.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Linq.Queryable.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Memory.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Http.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Http.Json.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.HttpListener.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Mail.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.NameResolution.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.NetworkInformation.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Ping.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Primitives.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Quic.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Requests.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Security.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.ServicePoint.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.Sockets.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.WebClient.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.WebHeaderCollection.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.WebProxy.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.WebSockets.Client.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Net.WebSockets.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Numerics.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Numerics.Vectors.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ObjectModel.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Printing.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\system.drawing.common\9.0.1\lib\net8.0\System.Private.Windows.Core.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.DispatchProxy.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.Emit.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.Emit.ILGeneration.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.Emit.Lightweight.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.Extensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.Metadata.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.Primitives.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Reflection.TypeExtensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Resources.Extensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Resources.Reader.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Resources.ResourceManager.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Resources.Writer.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.CompilerServices.VisualC.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Extensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Handles.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.InteropServices.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.InteropServices.JavaScript.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Intrinsics.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Loader.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Numerics.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Serialization.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Serialization.Formatters.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Serialization.Json.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Serialization.Primitives.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Runtime.Serialization.Xml.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.AccessControl.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Claims.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.Algorithms.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.Cng.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.Csp.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.Encoding.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.OpenSsl.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.Pkcs.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.Primitives.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.ProtectedData.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.X509Certificates.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Security.Cryptography.Xml.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Security.Permissions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Principal.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.Principal.Windows.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Security.SecureString.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ServiceModel.Web.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ServiceProcess.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Text.Encoding.CodePages.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Text.Encoding.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Text.Encoding.Extensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Text.Encodings.Web.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Text.Json.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Text.RegularExpressions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Threading.AccessControl.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.Channels.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.Overlapped.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.Tasks.Dataflow.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.Tasks.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.Tasks.Extensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.Tasks.Parallel.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.Thread.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.ThreadPool.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Threading.Timer.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Transactions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Transactions.Local.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.ValueTuple.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Web.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Web.HttpUtility.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Windows.Controls.Ribbon.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Windows.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Windows.Extensions.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Windows.Input.Manipulations.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Windows.Presentation.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\System.Xaml.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.Linq.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.ReaderWriter.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.Serialization.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.XDocument.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.XmlDocument.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.XmlSerializer.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.XPath.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\ref\net8.0\System.Xml.XPath.XDocument.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\UIAutomationClient.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\UIAutomationClientSideProviders.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\UIAutomationProvider.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\UIAutomationTypes.dll" />
+    <ReferencePath Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.31\ref\net8.0\WindowsBase.dll" />
+    <ReferencePath Include="C:\Users\COULD2303\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.17763.56\lib\net8.0\WinRT.Runtime.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D:\destop-companion-psk\src\Buddy\obj\Debug\net8.0-windows10.0.17763.0\Controls\SpeechBubble.g.cs" />
+    <Compile Include="D:\destop-companion-psk\src\Buddy\obj\Debug\net8.0-windows10.0.17763.0\DashboardWindow.g.cs" />
+    <Compile Include="D:\destop-companion-psk\src\Buddy\obj\Debug\net8.0-windows10.0.17763.0\OverlayWindow.g.cs" />
+    <Compile Include="D:\destop-companion-psk\src\Buddy\obj\Debug\net8.0-windows10.0.17763.0\SettingsWindow.g.cs" />
+    <Compile Include="D:\destop-companion-psk\src\Buddy\obj\Debug\net8.0-windows10.0.17763.0\StatsWindow.g.cs" />
+    <Compile Include="D:\destop-companion-psk\src\Buddy\obj\Debug\net8.0-windows10.0.17763.0\App.g.cs" />
+    <Compile Include="D:\destop-companion-psk\src\Buddy\obj\Debug\net8.0-windows10.0.17763.0\Buddy_Content.g.cs" />
+    <Compile Include="D:\destop-companion-psk\src\Buddy\obj\Debug\net8.0-windows10.0.17763.0\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="D:\destop-companion-psk\.tools\dotnet\sdk\8.0.425\Sdks\Microsoft.NET.Sdk\targets\..\analyzers\Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll" />
+    <Analyzer Include="D:\destop-companion-psk\.tools\dotnet\sdk\8.0.425\Sdks\Microsoft.NET.Sdk\targets\..\analyzers\Microsoft.CodeAnalysis.NetAnalyzers.dll" />
+    <Analyzer Include="C:\Users\COULD2303\.nuget\packages\communitytoolkit.mvvm\8.4.0\analyzers\dotnet\roslyn4.3\cs\CommunityToolkit.Mvvm.CodeFixers.dll" />
+    <Analyzer Include="C:\Users\COULD2303\.nuget\packages\communitytoolkit.mvvm\8.4.0\analyzers\dotnet\roslyn4.3\cs\CommunityToolkit.Mvvm.SourceGenerators.dll" />
+    <Analyzer Include="C:\Users\COULD2303\.nuget\packages\microsoft.net.illink.tasks\8.0.31\analyzers\dotnet\cs\ILLink.CodeFixProvider.dll" />
+    <Analyzer Include="C:\Users\COULD2303\.nuget\packages\microsoft.net.illink.tasks\8.0.31\analyzers\dotnet\cs\ILLink.RoslynAnalyzer.dll" />
+    <Analyzer Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\analyzers/dotnet/cs/Microsoft.Interop.ComInterfaceGenerator.dll" />
+    <Analyzer Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\analyzers/dotnet/cs/Microsoft.Interop.JavaScript.JSImportGenerator.dll" />
+    <Analyzer Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\analyzers/dotnet/cs/Microsoft.Interop.LibraryImportGenerator.dll" />
+    <Analyzer Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\analyzers/dotnet/cs/Microsoft.Interop.SourceGeneration.dll" />
+    <Analyzer Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\analyzers/dotnet/cs/System.Text.Json.SourceGeneration.dll" />
+    <Analyzer Include="D:\destop-companion-psk\.tools\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.31\analyzers/dotnet/cs/System.Text.RegularExpressions.Generator.dll" />
+    <Analyzer Include="C:\Users\COULD2303\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.17763.56\analyzers/dotnet/cs/WinRT.SourceGenerator.dll" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+</Project>

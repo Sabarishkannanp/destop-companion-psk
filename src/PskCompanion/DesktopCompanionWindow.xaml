@@ -1,0 +1,62 @@
+<Window x:Class="PskCompanion.DesktopCompanionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PSK Companion · Floating Buddy"
+        Width="320" Height="360"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+  <Canvas x:Name="Stage" Background="Transparent">
+    <!-- Speech Bubble -->
+    <Border x:Name="BubbleBorder" Canvas.Left="10" Canvas.Top="10" Width="300" Background="#F0131E33" BorderBrush="#FFC837" BorderThickness="1.5" CornerRadius="16" Padding="14,10">
+      <StackPanel>
+        <Grid Margin="0,0,0,4">
+          <TextBlock Text="✨ PSK COMPANION" FontSize="9" FontWeight="Bold" Foreground="#FFC837" HorizontalAlignment="Left" />
+          <Button Content="✕" Click="Close_Click" HorizontalAlignment="Right" Background="Transparent" Foreground="#94A3B8" BorderThickness="0" Padding="4,0" FontSize="11" Cursor="Hand" />
+        </Grid>
+        <TextBlock x:Name="BubbleText" Text="Good morning, PSK! Time to work! ☀️" FontSize="12" FontWeight="SemiBold" Foreground="#F8FAFC" TextWrapping="Wrap" Margin="0,0,0,8" />
+        <StackPanel Orientation="Horizontal">
+          <Button Content="Done" Click="DoneTask_Click" Padding="8,4" FontSize="10" /><Button Content="Later (10 min)" Click="LaterTask_Click" Padding="8,4" FontSize="10" /><Button Content="🚀 Work!" Style="{StaticResource AccentButton}" Click="WorkPrompt_Click" Padding="8,4" FontSize="10" Margin="0,0,4,0" />
+          <Button Content="💧 +1 Glass" Click="Glass_Click" Padding="8,4" FontSize="10" Margin="0,0,4,0" />
+          <Button Content="⚙️ Open App" Click="OpenApp_Click" Padding="8,4" FontSize="10" />
+        </StackPanel>
+      </StackPanel>
+    </Border>
+
+    <!-- Speech Bubble Tail -->
+    <Path Data="M 140,0 L 152,12 L 164,0 Z" Fill="#F0131E33" Canvas.Left="10" Canvas.Top="100" />
+
+    <!-- Avatar Pedestal -->
+    <Grid x:Name="AvatarHost" Canvas.Left="80" Canvas.Top="120" Width="160" Height="220" Cursor="SizeAll">
+      <Grid.RenderTransform>
+        <TransformGroup>
+          <RotateTransform x:Name="FloatTilt" />
+          <TranslateTransform x:Name="FloatBob" />
+        </TransformGroup>
+      </Grid.RenderTransform>
+
+      <!-- Airplane Flight Wings (in airplane mode) -->
+      <Border x:Name="FloatingWings" Width="170" Height="28" Background="#4038BDF8" BorderBrush="#0284C7" BorderThickness="1" CornerRadius="14" VerticalAlignment="Center" Margin="0,40,0,0" Visibility="Collapsed" />
+
+      <!-- Shadow -->
+      <Ellipse x:Name="GroundShadow" Width="110" Height="14" Fill="#50000000" VerticalAlignment="Bottom" Margin="0,0,0,6" />
+
+      <!-- Photo Avatar Mode -->
+      <Border x:Name="FloatingPhotoBorder" CornerRadius="14" BorderBrush="#FFC837" BorderThickness="2" Background="#111B2E" ClipToBounds="True" Height="180" Width="135" VerticalAlignment="Bottom" Margin="0,0,0,10">
+        <Image x:Name="FloatingPhotoImage" Stretch="UniformToFill" />
+      </Border>
+
+      <!-- Pixar Avatar Mode -->
+      <Image x:Name="FloatingPixarImage" Stretch="Uniform" Height="200" VerticalAlignment="Bottom" Margin="0,0,0,10" Visibility="Collapsed" />
+
+      <!-- Goggles Accessory -->
+      <TextBlock x:Name="FloatingGoggles" Text="🕶️" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,38,0,0" Visibility="Collapsed" />
+      <TextBlock x:Name="FloatingWingsIcon" Text="✈️" FontSize="26" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,60,-10,0" Visibility="Collapsed" />
+    </Grid>
+  </Canvas>
+</Window>

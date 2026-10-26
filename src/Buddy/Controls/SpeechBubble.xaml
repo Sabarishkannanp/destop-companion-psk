@@ -1,0 +1,14 @@
+<UserControl x:Class="Buddy.Controls.SpeechBubble" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="310" RenderTransformOrigin="0.5,1">
+  <UserControl.RenderTransform><ScaleTransform x:Name="PopScale" /></UserControl.RenderTransform>
+  <Grid>
+    <Border x:Name="BubbleBorder" Background="Transparent" Padding="6" Margin="0,0,0,8" BorderThickness="0">
+      <StackPanel>
+        <TextBlock x:Name="MessageText" TextWrapping="Wrap" TextAlignment="Center" MaxHeight="130" FontSize="28" FontWeight="ExtraBold" FontFamily="Segoe UI Variable, Segoe UI">
+          <TextBlock.Foreground><LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#FFE642" Offset="0" /><GradientStop Color="#FF8B00" Offset="1" /></LinearGradientBrush></TextBlock.Foreground>
+          <TextBlock.Effect><DropShadowEffect Color="#000000" BlurRadius="4" ShadowDepth="1.5" Opacity="1" /></TextBlock.Effect>
+        </TextBlock>
+        <StackPanel x:Name="Actions" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0"><Button x:Name="YesButton" Content="YES" Background="#FFD05A" Foreground="#192338" FontWeight="Bold" Click="YesClick" /><Button Content="Remind me later" Click="LaterClick" Padding="12,9" FontSize="12" /></StackPanel>
+      </StackPanel>
+    </Border>
+  </Grid>
+</UserControl>
